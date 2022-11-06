@@ -82,6 +82,26 @@ body, html {
     transition: ease-in-out 200ms;
 }
 
+.navbar-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 990px) {
+    .navbar li a.active::after,
+    .navbar li a:hover::after {
+        height: 0;
+    }
+
+    .navbar-logo-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-expand-lg {
+        flex-direction: column;
+    }
+}
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
