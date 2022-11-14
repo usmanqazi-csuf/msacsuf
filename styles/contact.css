@@ -8,6 +8,10 @@
     justify-content: left;
 }
 
+.card {
+    margin: 50px 0;
+}
+
 #contact-form {
     display: flex;
     /* padding: 20px; */

@@ -127,9 +127,9 @@ body, html {
 #hero {
     background-image: url("../img/hero.png");
     background-size: cover;
-    background-position: center top 100%;
+    background-position: center top 87.5%;
     background-repeat: no-repeat;
-    height: 87.5%;
+    min-height: 87.5%;
     width: 100%;
     padding: 0 80px;
     display: flex;
@@ -149,7 +149,7 @@ body, html {
     text-align: center;
 }
 
-#hero h1 {
+/* #hero h1 {
     font-size: 40px;
     line-height: 64px;
     color: #fff;
@@ -175,7 +175,7 @@ body, html {
     background-color: #E17000;
     transition: ease-in-out 200ms;
     cursor: pointer;
-}
+} */
 
 /* Products Start */
 
