@@ -1,12 +1,12 @@
 <script>
     $(function(){
-        console.log(window.location.pathname)
         var current = window.location.pathname
+        // console.log("Current: " + current)
         $('.nav-link').each(function() {
             var $this = $(this);   
-            console.log($this.attr('href'))
+            // console.log($this.attr('href') + ", " + current.includes($this.attr('href').split('.')[1]))
             // if the current path is like this link, make it active
-            if($this.attr('href').indexOf(current) !== -1){
+            if (current.includes($this.attr('href').split('.')[1])) {
                 $this.addClass('active');
             }
         })
