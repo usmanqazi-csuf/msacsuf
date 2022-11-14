@@ -1,23 +1,42 @@
+<script>
+    $(function(){
+        // console.log(window.location.pathname)
+        var current = window.location.pathname
+        $('.nav-link').each(function() {
+            var $this = $(this);   
+            // console.log($this.attr('href'))     
+            // if the current path is like this link, make it active
+            if($this.attr('href').indexOf(current) !== -1){
+                $this.addClass('active');
+            }
+        })
+    });
+</script>
 <nav class="navbar navbar-expand-lg">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="prayertimes.html">Prayer Times</a></li> -->
-                <!-- <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li> -->
-            </ul>
-        </div>
-        <div class="navbar-logo-container">
-            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo" width="75px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li> -->
-                <!-- <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="dawah.html">Dawah</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="mobile-navbar-logo-container">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo" width="75px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="./prayertimes.html">Prayer Times</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li> -->
+        </ul>
+    </div>
+    <div class="navbar-logo-container">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Logo" width="75px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item"><a class="nav-link" href="./resources.html">Resources</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="./dawah.html">Dawah</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
